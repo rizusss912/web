@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Регистрация</title>
+    <meta charSet="utf-8"/>
+    <link rel="shortcut icon" href="img/favicon_islands.ico"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="header">
+        <p id="log_in" align="right">Уже есть аккаунт на Яндексе?  <a href="">Войти</a></p>
+    </div>
+      <div class="main">
+          <div class="preview" align="center">
+                <a href="https://yandex.ru"><img src="img/logo.png" alt="Фотография 1" width="94" height="54"></a>
+              <h2 id="preview_head">Один аккаунт для всего</h2>
+              <p>
+   <img src="https://yastatic.net/s3/passport-static/core/v0.2.167-5/i/services_icons/mail.svg" id="preview_ing" width="40" height="40">
+   <img src="https://yastatic.net/s3/passport-static/core/v0.2.167-5/i/services_icons/disk.svg" id="preview_ing" width="40" height="40">
+   <img src="https://yastatic.net/s3/passport-static/core/v0.2.167-5/i/services_icons/market.svg" id="preview_ing" width="40" height="40">
+   <img src="https://yastatic.net/s3/passport-static/core/v0.2.167-5/i/services_icons/music.svg" id="preview_ing" width="40" height="40">
+            </p>
+            <p id="preview_text">Ищите, пишите письма, сохраняйте и&nbsp;делитесь файлами, выбирайте товары, слушайте музыку и&nbsp;прокладывайте маршруты с&nbsp;одним аккаунтом на&nbsp;всех устройствах и&nbsp;платформах.</p>
+          </div>
+        </div>
+      <div class="main" id="reg">
+        <div class="registration">
+          <div>
+            <div>
+              <h1>Регистрация</h1>
+            </div>
+          <form class="registration__form registration__form_desktop" autocomplete="off" action="/registration" method="post">
+            <input type="hidden" name="track_id" value="c81cc4491a579f06bad278287de9152020">
+            <div>
+              <div class="form__field field__error">
+                <span class="Textinput Textinput_state_error Textinput_view_one-border Textinput_size_m">
+                  <input type="text" name="firstname" data-t="field:input-firstname" autofocus="" id="firstname" value="" aria-invalid="true" class="Textinput-Control" autocomplete="off">
+                  <span class="Textinput-Box"></span>
+                </span>
+                <label for="firstname" class="registration__label">Имя</label>
+                <div class="reg-field__popup" aria-live="polite">
+                  <div class="form__popup-error" data-t="name-error" role="alert">
+                    <div class="error-message">Пожалуйста, укажите имя</div>
+                  </div>
+                </div>
+              </div>
+              <div class="form__field field__error">
+                <span class="Textinput Textinput_state_error Textinput_view_one-border Textinput_size_m">
+                  <input type="text" name="lastname" data-t="field:input-lastname" id="lastname" value="" aria-invalid="true" class="Textinput-Control" autocomplete="off">
+                  <span class="Textinput-Box"></span>
+                </span>
+                <label for="lastname" class="registration__label">Фамилия</label>
+                <span class="Textinput Textinput_view_default Textinput_size_m g-hidden">
+                  <input type="text" name="surname" data-t="field:input-surname" value="" id="surname" aria-invalid="false" class="Textinput-Control" autocomplete="off">
+                  <span class="Textinput-Box"></span>
+                </span>
+              </div>
+              <div class="form__field form__field_wide">
+                <span class="Textinput Textinput_view_one-border Textinput_size_m">
+                  <input type="text" name="login" data-t="field:input-login" id="login" value="" aria-invalid="false" class="Textinput-Control" autocomplete="username">
+                  <span class="Textinput-Box"></span>
+                </span>
+                <label for="login" class="registration__label">Придумайте логин</label>
+              </div>
+            </div>
+            <div>
+              <div class="form__field field__password">
+                <button class="field-type__toggler field-type-password" title="Показать текст пароля" tabindex="2" type="button">Показать текст пароля</button>
+                <span class="Textinput Textinput_view_one-border Textinput_size_m">
+                  <input type="password" name="password" data-t="field:input-password" id="password" value="" aria-invalid="false" class="Textinput-Control" autocomplete="new-password" aria-autocomplete="list">
+                  <span class="Textinput-Box"></span>
+                </span>
+                <label for="password" class="registration__label">Придумайте пароль</label>
+              </div>
+              <div class="form__field"><span class="Textinput Textinput_view_one-border Textinput_size_m">
+                <input type="password" name="password_confirm" data-t="field:input-password_confirm" id="password_confirm" value="" aria-invalid="false" class="Textinput-Control" autocomplete="new-password">
+                <span class="Textinput-Box"></span>
+              </span>
+              <label for="password_confirm" class="registration__label">Повторите пароль</label>
+            </div>
+          </div>
+          <div class="human-confirmation-wrapper can-switch">
+            <div class="phone__confirm-wrapper">
+              <div class="form__field">
+                <span class="Textinput Textinput_view_one-border Textinput_size_m">
+                  <input type="tel" name="phone" data-t="field:input-phone" id="phone" aria-invalid="false" class="Textinput-Control" autocomplete="off" value="">
+                  <span class="Textinput-Box"></span>
+                </span>
+                <label for="phone" class="registration__label">Номер мобильного телефона</label>
+              </div>
+                <div class="toggle-link link_has-no-phone">
+                  <span data-t="link:default" tabindex="0" class="Link Link_pseudo Link_view_default">У&nbsp;меня нет телефона</span>
+                </div>
+                <div class="registration__send-code">
+                  <button data-t="button:pseudo" type="button" class="Button2 Button2_size_l Button2_view_pseudo Button2_width_max" autocomplete="off">
+                    <span class="Button2-Text">Подтвердить номер</span>
+                  </button>
+                  <div class="fetching-block">
+                    <div data-t="spin" class="Spin2 Spin2_size_m Spin2_view_default"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form__submit" data-t="registration:btn-submit">
+          <span class="js-submit">
+            <button data-t="button:action" type="submit" class="Button2 Button2_size_l Button2_view_action Button2_width_max Button2_type_submit" aria-disabled="false" autocomplete="off">
+              <span class="Button2-Text">Зарегистрироваться</span>
+            </button>
+          </span>
+        </div>
+        <div class="registration-auth-link">Уже есть аккаунт на&nbsp;Яндексе?<a class="registration-auth-link__link" href="https://passport.yandex.ru/auth" title="Войти">Войти</a></div>
+        <div data-t="eula-block">
+          <div class="form__eula">
+            <span>Нажимая кнопку «Зарегистрироваться»:</span>
+          </div>
+          <div class="form__eula">
+            <span class="Checkbox Checkbox_checked Checkbox_size_m Checkbox_view_default">
+              <span class="Checkbox-Box">
+                <input type="checkbox" data-t="checkbox" name="eula_accepted" aria-checked="true" aria-labelledby="label-eula_accepted" id="eula_accepted" autocomplete="off" class="Checkbox-Control" checked="">
+                <span class="Checkbox-Tick">
+                  <span class="Icon Icon_hasGlyph Icon_glyph_type-tick" aria-hidden="true">
+                    <svg focusable="false" viewBox="0 0 12 10" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M.49 5.385l1.644-1.644 4.385 4.385L4.874 9.77.49 5.385zm4.384 1.096L10.356 1 12 2.644 6.519 8.126 4.874 6.48v.001z">
+                      </path>
+                    </svg>
+                  </span>
+                </span>
+              </span>
+            </span>
+            <label class="Checkbox-label Checkbox-label_size_m" for="eula_accepted">Я принимаю условия <a href="https://yandex.ru/legal/rules/" target="_blank">Пользовательского соглашения</a> и даю своё согласие Яндексу на обработку моей персональной информации на условиях, определенных <a href="https://yandex.ru/legal/confidential/" target="_blank">Политикой конфиденциальности</a>.</label>
+          </div>
+        </div>
+      </form>
+        </div>
+      </div>
+  </body>
+</html>
