@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <title>Регистрация</title>
+    <meta charSet="utf-8"/>
+    <link rel="shortcut icon" href="img/favicon_islands.ico"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+  <body>
+    <div class="header">
+        <p id="log_in" align="right">Уже есть аккаунт на Яндексе?  <a href="">Войти</a></p>
+    </div>
+      <div class="main">
+          <div class="preview" align="center">
+                <a href="https://yandex.ru"><img src="img/logo.png" alt="Фотография 1" width="94" height="54"></a>
+              <h2 id="preview_head">Один аккаунт для всего</h2>
+              <p>
+   <img src="https://yastatic.net/s3/passport-static/core/v0.2.167-5/i/services_icons/mail.svg" id="preview_ing" width="40" height="40">
+   <img src="https://yastatic.net/s3/passport-static/core/v0.2.167-5/i/services_icons/disk.svg" id="preview_ing" width="40" height="40">
+   <img src="https://yastatic.net/s3/passport-static/core/v0.2.167-5/i/services_icons/market.svg" id="preview_ing" width="40" height="40">
+   <img src="https://yastatic.net/s3/passport-static/core/v0.2.167-5/i/services_icons/music.svg" id="preview_ing" width="40" height="40">
+            </p>
+            <p id="preview_text">Ищите, пишите письма, сохраняйте и&nbsp;делитесь файлами, выбирайте товары, слушайте музыку и&nbsp;прокладывайте маршруты с&nbsp;одним аккаунтом на&nbsp;всех устройствах и&nbsp;платформах.</p>
+          </div>
+        </div>
+      <div class="main" id="reg">
+        <div class="registration">
+          <div>
+            <div>
+              <h1 align="center">Регистрация</h1>
+            </div>
+          <form >
+            <div>
+              <div class="string">
+                <input class="textinput_input" type="text" name="" placeholder="Имя">
+                <div class="line"></div>
+              </div>
+              <div class="string">
+                <input class="textinput_input" type="text" name="" placeholder="Фамилия">
+                <div class="line"></div>
+              </div>
+              <div class="string">
+                <input class="textinput_input" type="text" name="" placeholder="Придумайте логин">
+                <div class="line"></div>
+              </div>
+              <div class="string password">
+  	            <input type="password" class="textinput_input" id="password-input" placeholder="Придумайте пароль" name="password">
+  	            <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                <div class="line"></div>
+              </div>
+              <div class="string">
+                <input class="textinput_input" id="password-input2" type="password" name="" placeholder="Повторите пароль">
+                <div class="line"></div>
+              </div>
+              <div class="string">
+                <input class="textinput_input" type="tel" name="" placeholder="Номер мобильного телефона" pattern="+7 [0-9]{3}-[0-9]{3}-[0-9]{4}" >
+                <div class="line"></div>
+              </div>
+            </div>
+            <div align="center">
+              <input class="button" type="button" name="" value="Зарегистрироваться">
+              </div>
+              <div class="form_accept">
+                <p id="log_in">Нажимая кнопку «Зарегистрироваться»:</p>
+              </div>
+              <div class="form_accept">
+              <p id="politics"> <input type="checkbox" name="" checked="checked"> Я принимаю условия <a href="">Пользовательского соглашения</a> и даю своё согласие Яндексу на обработку моей персональной информации на условиях, определенных <a href="">Политикой конфиденциальности.</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+<script>
+  function show_hide_password(target){
+  	var input = document.getElementById('password-input');
+    var input2 = document.getElementById('password-input2');
+  	if (input.getAttribute('type') == 'password') {
+  		target.classList.add('view');
+  		input.setAttribute('type', 'text');
+      input2.setAttribute('type', 'text');
+  	} else {
+  		target.classList.remove('view');
+  		input.setAttribute('type', 'password');
+      input2.setAttribute('type', 'password');
+  	}
+  	return false;
+  }
+</script>
+  </body>
+</html>
