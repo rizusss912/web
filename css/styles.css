@@ -214,6 +214,10 @@ form {
   transition: 0.3s;
 }
 .textinput2{
+  -moz-user-select: none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+user-select: none;
   position: relative;
   color: #999999;
   font-family: YS Text,Arial,sans-serif;
@@ -221,6 +225,10 @@ form {
    transition: 0.3s;
 }
 .textinput{
+  -moz-user-select: none;
+-khtml-user-select: none;
+-webkit-user-select: none;
+user-select: none;
   position: absolute;
   color: #999999;
   font-family: YS Text,Arial,sans-serif;
