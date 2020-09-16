@@ -10,7 +10,7 @@
     <div class="header">
         <p id="log_in" align="right">Уже есть аккаунт на Яндексе?  <a href="">Войти</a></p>
     </div>
-      <div class="main">
+      <div class="main" id="preview">
           <div class="preview" align="center">
                 <a href="https://yandex.ru"><img src="img/logo.png" alt="Фотография 1" width="94" height="54"></a>
               <h2 id="preview_head">Один аккаунт для всего</h2>
@@ -24,7 +24,7 @@
           </div>
         </div>
       <div class="main" id="reg">
-        <div class="registration">
+        <div class="registration" id="form">
           <div>
             <div>
               <h1 align="center">Регистрация</h1>
@@ -32,59 +32,53 @@
           <form >
             <div>
               <div class="string">
-                <input class="textinput_input" type="text" name="" placeholder="Имя">
+                <span class="textinput">Имя</span>
+                <input class="textinput_input" type="text" name="">
                 <div class="line"></div>
               </div>
               <div class="string">
-                <input class="textinput_input" type="text" name="" placeholder="Фамилия">
+                <span class="textinput">Фамилия</span>
+                <input class="textinput_input" type="text" name="">
                 <div class="line"></div>
               </div>
               <div class="string">
-                <input class="textinput_input" type="text" name="" placeholder="Придумайте логин">
+                <span class="textinput">Придумайте логин</span>
+                <input class="textinput_input" type="text" name="">
                 <div class="line"></div>
               </div>
               <div class="string password">
-  	            <input type="password" class="textinput_input" id="password-input" placeholder="Придумайте пароль" name="password">
-  	            <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                <span class="textinput">Придумайте пароль</span>
+  	            <input type="password" class="textinput_input" id="password-input" name="password">
+                <div class="line"></div>
+                <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+
+              </div>
+              <div class="string">
+                <span class="textinput">Повторите пароль</span>
+                <input class="textinput_input" id="password-input2" type="password" name="">
                 <div class="line"></div>
               </div>
               <div class="string">
-                <input class="textinput_input" id="password-input2" type="password" name="" placeholder="Повторите пароль">
-                <div class="line"></div>
-              </div>
-              <div class="string">
-                <input class="textinput_input" type="tel" name="" placeholder="Номер мобильного телефона" pattern="+7 [0-9]{3}-[0-9]{3}-[0-9]{4}" >
+                <span class="textinput">Номер мобильного телефона</span>
+                <input class="textinput_input" type="tel" name=""pattern="+7 [0-9]{3}-[0-9]{3}-[0-9]{4}" >
                 <div class="line"></div>
               </div>
             </div>
             <div align="center">
-              <input class="button" type="button" name="" value="Зарегистрироваться">
+              <input class="button" type="button" name="" value="Зарегистрироваться" id="Registration">
               </div>
               <div class="form_accept">
                 <p id="log_in">Нажимая кнопку «Зарегистрироваться»:</p>
               </div>
               <div class="form_accept">
-              <p id="politics"> <input type="checkbox" name="" checked="checked"> Я принимаю условия <a href="">Пользовательского соглашения</a> и даю своё согласие Яндексу на обработку моей персональной информации на условиях, определенных <a href="">Политикой конфиденциальности.</a></p>
+              <p id="politics"> <input type="checkbox" name="" checked="checked" onchange='checkPolitics();' id="Politics"> Я принимаю условия <a href="">Пользовательского соглашения</a> и даю своё согласие Яндексу на обработку моей персональной информации на условиях, определенных <a href="">Политикой конфиденциальности.</a></p>
             </div>
           </form>
         </div>
       </div>
     </div>
-<script>
-  function show_hide_password(target){
-  	var input = document.getElementById('password-input');
-    var input2 = document.getElementById('password-input2');
-  	if (input.getAttribute('type') == 'password') {
-  		target.classList.add('view');
-  		input.setAttribute('type', 'text');
-      input2.setAttribute('type', 'text');
-  	} else {
-  		target.classList.remove('view');
-  		input.setAttribute('type', 'password');
-      input2.setAttribute('type', 'password');
-  	}
-  	return false;
-  }
-</script>
+
+    <script src="js/javascript.js"></script>
+
   </body>
 </html>
