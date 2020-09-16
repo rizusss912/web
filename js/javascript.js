@@ -12,7 +12,7 @@ var inpEmail = document.getElementById('inpEmail');
   inpName.onblur = function (event) {
     if(inpName.value==""){
     document.getElementById('inpTextName').className = "textinput";
-    document.getElementById('inpTextName').parentNode.style.margin = "20px auto 10px auto";
+    document.getElementById('inpTextName').parentNode.style.margin = "35px auto 10px auto";
   }
   };
   inpFirstName.onfocus = function (event) {
@@ -22,7 +22,7 @@ var inpEmail = document.getElementById('inpEmail');
   inpFirstName.onblur = function (event) {
     if(inpFirstName.value==""){
     document.getElementById('inpTextFirstName').className = "textinput";
-    document.getElementById('inpTextFirstName').parentNode.style.margin = "20px auto 10px auto";
+    document.getElementById('inpTextFirstName').parentNode.style.margin = "35px auto 10px auto";
   }
   };
   inpLogin.onfocus = function (event) {
@@ -32,7 +32,7 @@ var inpEmail = document.getElementById('inpEmail');
   inpLogin.onblur = function (event) {
     if(inpLogin.value==""){
     document.getElementById('inpTextLogin').className = "textinput";
-    document.getElementById('inpTextLogin').parentNode.style.margin = "20px auto 10px auto";
+    document.getElementById('inpTextLogin').parentNode.style.margin = "35px auto 10px auto";
   }
   };
   inpPasword.onfocus = function (event) {
@@ -42,7 +42,7 @@ var inpEmail = document.getElementById('inpEmail');
   inpPasword.onblur = function (event) {
     if(inpPasword.value==""){
     document.getElementById('inpTextPasword').className = "textinput";
-    document.getElementById('inpTextPasword').parentNode.style.margin = "20px auto 10px auto";
+    document.getElementById('inpTextPasword').parentNode.style.margin = "35px auto 10px auto";
   }
   };
   inpTwoPasword.onfocus = function (event) {
@@ -52,7 +52,7 @@ var inpEmail = document.getElementById('inpEmail');
   inpTwoPasword.onblur = function (event) {
     if(inpTwoPasword.value==""){
     document.getElementById('inpTextTwoPasword').className = "textinput";
-    document.getElementById('inpTextTwoPasword').parentNode.style.margin = "20px auto 10px auto";
+    document.getElementById('inpTextTwoPasword').parentNode.style.margin = "35px auto 10px auto";
   }
   };
   inpEmail.onfocus = function (event) {
@@ -62,7 +62,7 @@ var inpEmail = document.getElementById('inpEmail');
   inpEmail.onblur = function (event) {
     if(inpEmail.value==""){
     document.getElementById('inpTextEmail').className = "textinput";
-    document.getElementById('inpTextEmail').parentNode.style.margin = "20px auto 5px auto";
+    document.getElementById('inpTextEmail').parentNode.style.margin = "35px auto 5px auto";
   }
   };
 
