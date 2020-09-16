@@ -202,7 +202,7 @@ form {
   	width: 90%;
 }
 .string{
-  margin: 9px auto ;
+  margin: 30px auto;
 }
 .line{
   margin-top: 5px;
@@ -213,11 +213,19 @@ form {
   background-color: #CCCCCC;
   transition: 0.3s;
 }
-.textinput{
+.textinput2{
   position: relative;
   color: #999999;
   font-family: YS Text,Arial,sans-serif;
    font-size: 10pt;
+   transition: 0.1s;
+}
+.textinput{
+  position: absolute;
+  color: #999999;
+  font-family: YS Text,Arial,sans-serif;
+   font-size: 14pt;
+   transition: 0.1s;
 }
 .textinput_input:focus + .line{
     background-color: #FFB32D;
