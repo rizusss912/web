@@ -192,7 +192,7 @@ form {
 	height: 20px;
   background: url(https://snipp.ru/demo/495/no-view.svg) 0 0 no-repeat;
 }
-.password-controlview {
+.password-control.view {
   background: url(https://snipp.ru/demo/495/view.svg) 0 0 no-repeat;
 }
 .password {
@@ -202,6 +202,7 @@ form {
   	width: 90%;
 }
 .string{
+  transition: 0.5s;
   margin: 35px auto 10px auto;
 }
 .line{
@@ -211,7 +212,7 @@ form {
   height: 2px;
   width: 100%;
   background-color: #CCCCCC;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 .textinput2{
   -moz-user-select: none;
@@ -222,7 +223,7 @@ user-select: none;
   color: #999999;
   font-family: YS Text,Arial,sans-serif;
    font-size: 9pt;
-   transition: 0.3s;
+   transition: 0.5s;
 }
 .textinput{
   -moz-user-select: none;
